@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item"><a href="kehadiran.html">Kehadiran</a></li>
+        <li class="menu-item log"><a href="log_masuk.html">Log Masuk</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Log Masuk</h3>
+      <form action="" method="post" class="borang">
+        <label for="noKP">No Kad Pengenalan</label>
+        <input
+          type="text"
+          name="noKP"
+          id="noKP"
+          pattern="[0-9]{12}"
+          oninvalid="this.setCustomValidity('Sila masukkan 12 digit nombor sahaja')"
+          oninput="this.setCustomValidity('')"
+          required
+        />
+        <label for="kataLaluan">Kata Laluan</label>
+        <input type="password" name="kataLaluan" id="kataLaluan" required />
+        <button type="submit" name="logmasuk">Log Masuk</button>
+      </form>
+      <div class="pautan">
+        Tiada akaun? Sila daftar <a href="daftar.html">di sini</a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

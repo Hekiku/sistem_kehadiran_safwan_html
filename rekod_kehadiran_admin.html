@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header print">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti_admin.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item">
+          <a href="rekod_kehadiran_admin.html">Rekod Kehadiran</a>
+        </li>
+        <li class="menu-item"><a href="senarai_ahli.html">Senarai Ahli</a></li>
+        <li class="menu-item log"><a href="#">Log Keluar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Rekod Kehadiran Rumah Sukan</h3>
+      <form action="" method="post" class="borang print">
+        <label for="senarai">Senarai Aktiviti</label>
+        <select name="senarai" id="senarai" required>
+          <option value="" disabled selected>Sila pilih aktiviti</option>
+          <option value="1">Latihan Rumah Sukan 1</option>
+          <option value="2">Latihan Rumah Sukan 2</option>
+          <option value="3">Latihan Rumah Sukan 3</option>
+        </select>
+        <label for="ting">Tingkatan</label>
+        <select name="ting" id="ting">
+          <option value="" disabled selected>Sila pilih Tingkatan</option>
+          <option value="1">Satu</option>
+          <option value="2">Dua</option>
+          <option value="3">Tiga</option>
+          <option value="4">Empat</option>
+          <option value="5">Lima</option>
+        </select>
+        <button type="submit" name="papar">Papar</button>
+      </form>
+      <h4 class="sub-tajuk">Latihan Rumah Sukan 3</h4>
+      <h4 class="sub-tajuk">Tingkatan 1</h4>
+      <table class="rekod">
+        <tr>
+          <th>Bil</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Kehadiran</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Annisa Bt Ali</td>
+          <td>1 Akik</td>
+          <td>Hadir</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Fatin Bt Faizal</td>
+          <td>1 Akik</td>
+          <td>Tidak Hadir</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Ang Jie Yin</td>
+          <td>1 Delima</td>
+          <td>Hadir</td>
+        </tr>
+      </table>
+      <div class="butang">
+        <button class="print" onclick="window.print(); return false;">
+          Cetak
+        </button>
+      </div>
+    </div>
+    <div class="footer print">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

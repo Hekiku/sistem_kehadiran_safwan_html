@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ~~~Overall layout untuk page~~~ */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 150px;
+  background-color: #a22522;
+}
+
+.content {
+  flex: 1;
+  background-color: #f3d9b1;
+}
+
+.footer {
+  height: 80px;
+  background-color: #a22522;
+}
+
+/* ~~Header~~ */
+.sistem {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.menu {
+  width: 100vw;
+  height: 50px;
+  background-color: #c33149;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.menu-item {
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  color: antiquewhite;
+  line-height: 30px;
+}
+
+.menu-item:last-child {
+  margin-left: auto;
+}
+
+.menu-item:hover,
+.menu-active {
+  background-color: #edadc7;
+  color: #22181c;
+  font-weight: 600;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ~~Footer~~ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer p {
+  line-height: 20px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* ~~Content~~ */
+.content {
+  padding: 20px;
+}
+
+.selamat {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tajuk {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sub-tajuk {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ~Paparan Maklumat Aktivit~ */
+.aktiviti {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 300px;
+  row-gap: 5px;
+  margin: 15px auto;
+}
+
+.label {
+  font-weight: 600;
+}
+
+/* ~Paparan pautan ke page lain~ */
+.pautan {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ~Jadual senarai~ */
+.senarai {
+  margin: 15px auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+.senarai th,
+.senarai td {
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.senarai th {
+  letter-spacing: 2px;
+}
+
+.senarai td {
+  letter-spacing: 1px;
+}
+
+/* ~Borang Maklumat~ */
+.borang {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 15px auto;
+}
+
+.borang input,
+.borang select {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.borang button {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* ~Butang untuk jadual~ */
+.butang {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.butang button {
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* ~Jadual  rekod kehadiran~ **(Mungkin tak perlu) */
+.rekod {
+  margin: 15px auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.rekod th,
+.rekod td {
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.rekod th {
+  letter-spacing: 2px;
+}
+
+.rekod td {
+  letter-spacing: 1px;
+}
+
+.rekod td:nth-child(2) {
+  width: 300px;
+  text-align: left;
+}
+
+/* ~Paparan untuk print~ */
+@media print {
+  /* Untuk hilangkan dr print */
+  .print {
+    display: none;
+  }
+
+  /* .pagebreak {
+    clear: both;
+    page-break-after: always;
+  } */
+}

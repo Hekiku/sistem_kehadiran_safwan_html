@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header print">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti_admin.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item">
+          <a href="rekod_kehadiran_admin.html">Rekod Kehadiran</a>
+        </li>
+        <li class="menu-item"><a href="senarai_ahli.html">Senarai Ahli</a></li>
+        <li class="menu-item log"><a href="#">Log Keluar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Senarai Ahli Rumah Sukan</h3>
+      <form action="" method="post" class="borang print">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" required />
+        <label for="ting">Tingkatan</label>
+        <select name="ting" id="ting">
+          <option value="" disabled selected>Sila pilih Tingkatan</option>
+          <option value="1">Satu</option>
+          <option value="2">Dua</option>
+          <option value="3">Tiga</option>
+          <option value="4">Empat</option>
+          <option value="5">Lima</option>
+        </select>
+        <button type="submit" name="cari">Cari</button>
+      </form>
+      <h4 class="sub-tajuk">Tingkatan 1</h4>
+      <table class="senarai">
+        <tr>
+          <th>Bil</th>
+          <th>No Kad Pengenalan</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>No Telefon</th>
+          <th>Email</th>
+          <th class="print">Hapus</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>010203075544</td>
+          <td>Annisa Bt Ali</td>
+          <td>1 Akik</td>
+          <td>0112233456</td>
+          <td>annisa@gmail.com</td>
+          <td class="print"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>010203075544</td>
+          <td>Annisa Bt Ali</td>
+          <td>1 Akik</td>
+          <td>0112233456</td>
+          <td>annisa@gmail.com</td>
+          <td class="print"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>010203075544</td>
+          <td>Annisa Bt Ali</td>
+          <td>1 Akik</td>
+          <td>0112233456</td>
+          <td>annisa@gmail.com</td>
+          <td class="print"><a href="#">Hapus</a></td>
+        </tr>
+      </table>
+      <div class="pautan print">
+        Muat naik ahli <a href="muat_naik_ahli.html">di sini</a>
+      </div>
+      <div class="butang">
+        <button class="print" onclick="window.print(); return false;">
+          Cetak
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

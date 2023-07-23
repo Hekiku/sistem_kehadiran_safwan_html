@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti_admin.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item">
+          <a href="rekod_kehadiran_admin.html">Rekod Kehadiran</a>
+        </li>
+        <li class="menu-item"><a href="senarai_ahli">Senarai Ahli</a></li>
+        <li class="menu-item log"><a href="#">Log Keluar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Pendaftaran Aktiviti</h3>
+      <form action="" method="post" class="borang">
+        <label for="nama">Nama Aktivi</label>
+        <input type="text" name="nama" id="nama" required />
+        <label for="tarikh">Tarikh</label>
+        <input type="date" name="tarikh" id="tarikh" required />
+        <label for="masaMula">Masa</label>
+        <input
+          type="time"
+          name="masaMula"
+          id="masaMula"
+          min="07:30"
+          max="15:00"
+          required
+        /><label for="masaTamat">Masa</label>
+        <input
+          type="time"
+          name="masaTamat"
+          id="masaTamat"
+          min="07:30"
+          max="15:00"
+          required
+        />
+        <label for="tempat">Tempat</label>
+        <input type="text" name="tempat" id="tempat" required />
+        <button type="submit" name="tambah">Tambah</button>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

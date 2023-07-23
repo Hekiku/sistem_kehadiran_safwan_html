@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item"><a href="kehadiran.html">Kehadiran</a></li>
+        <li class="menu-item log"><a href="log_masuk.html">Log Masuk</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Senarai Aktiviti</h3>
+      <form action="" method="post" class="borang">
+        <label for="senarai">Senarai Aktiviti</label>
+        <select name="senarai" id="senarai">
+          <option value="3">Latihan Rumah Sukan 3</option>
+        </select>
+        <button type="submit" name="papar">Papar</button>
+      </form>
+      <h3 class="tajuk">Aktiviti</h3>
+      <div class="aktiviti">
+        <div class="label">Aktiviti</div>
+        <div class="maklumat">Latihan Rumah Sukan 3</div>
+        <div class="label">Tarikh</div>
+        <div class="maklumat">18 Julai 2023</div>
+        <div class="label">Masa</div>
+        <div class="maklumat">7.30 pg - 9.00 pg</div>
+        <div class="label">Tempat</div>
+        <div class="maklumat">Padang Perdana</div>
+      </div>
+      <h3 class="tajuk">Kehadiran</h3>
+      <form action="" method="post" class="borang">
+        <input type="hidden" name="idAktiviti" value="" />
+        <label for="noKP">No Kad Pengenalan</label>
+        <input
+          type="text"
+          name="noKP"
+          id="noKP"
+          pattern="[0-9]{12}"
+          oninvalid="this.setCustomValidity('Sila masukkan 12 digit nombor sahaja')"
+          oninput="this.setCustomValidity('')"
+          required
+        />
+        <button type="submit" name="hadir">Kemaskini</button>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

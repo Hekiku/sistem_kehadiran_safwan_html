@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item"><a href="kehadiran.html">Kehadiran</a></li>
+        <li class="menu-item">
+          <a href="rekod_kehadiran.html">Rekod Kehadiran</a>
+        </li>
+        <li class="menu-item"><a href="profil.html">Profil</a></li>
+        <li class="menu-item log"><a href="#">Log Keluar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Kemaskini Profil</h3>
+      <form action="" method="post" class="borang">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" value="Siti Noor Aminah" />
+        <label for="ting">Tingkatan</label>
+        <select name="ting" id="ting" required>
+          <option value="1">Satu</option>
+          <option value="2">Dua</option>
+          <option value="3" selected>Tiga</option>
+          <option value="4">Empat</option>
+          <option value="5">Lima</option>
+        </select>
+        <label for="kelas">Kelas</label>
+        <select name="kelas" id="kelas" required>
+          <option value="akik">Akik</option>
+          <option value="delima">Delima</option>
+          <option value="intan">Intan</option>
+          <option value="jed">Jed</option>
+          <option value="mutiara">Mutiara</option>
+          <option value="nilam" selected>Nilam</option>
+          <option value="topaz">Topaz</option>
+          <option value="zamrud">Zamrud</option>
+        </select>
+        <label for="noTel">No. Telefon</label>
+        <input type="text" name="noTel" id="noTel" value="0112233456" />
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" value="aminah@gmail.com" />
+        <label for="noKP">No Kad Pengenalan</label>
+        <input
+          type="text"
+          name="noKP"
+          id="noKP"
+          pattern="[0-9]{12}"
+          oninvalid="this.setCustomValidity('Sila masukkan 12 digit nombor sahaja')"
+          oninput="this.setCustomValidity('')"
+          required
+          value="010203075544"
+        />
+        <label for="kataLaluan">Kata Laluan</label>
+        <input
+          type="password"
+          name="kataLaluan"
+          id="kataLaluan"
+          required
+          value="123456789"
+        />
+        <button type="submit" name="kemaskini">Kemaskini</button>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

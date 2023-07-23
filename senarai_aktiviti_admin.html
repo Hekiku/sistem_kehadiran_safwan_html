@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kehadiran Cavell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="sistem">Sistem Kehadiran Cavell</h1>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="index.html">Laman Utama</a>
+        </li>
+        <li class="menu-item">
+          <a href="senarai_aktiviti_admin.html">Senarai Aktiviti</a>
+        </li>
+        <li class="menu-item">
+          <a href="rekod_kehadiran_admin.html">Rekod Kehadiran</a>
+        </li>
+        <li class="menu-item"><a href="senarai_ahli.html">Senarai Ahli</a></li>
+        <li class="menu-item log"><a href="#">Log Keluar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3 class="tajuk">Senarai Aktiviti Rumah Sukan</h3>
+      <form action="" method="post" id="borang_aktiviti">
+        <table class="senarai">
+          <tr>
+            <th>Bil</th>
+            <th>Aktiviti</th>
+            <th>Tarikh</th>
+            <th>Masa</th>
+            <th>Tempat</th>
+            <th>Status</th>
+            <th>Hapus</th>
+            <th>Edit</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Latihan Rumah Sukan 1</td>
+            <td>4 Julai 2023</td>
+            <td>7.30 pg - 9.00 pg</td>
+            <td>Padang Perdana</td>
+            <td><input type="checkbox" name="status[]" id="" value="" /></td>
+            <td><a href="#">Hapus</a></td>
+            <td><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Latihan Rumah Sukan 2</td>
+            <td>11 Julai 2023</td>
+            <td>7.30 pg - 9.00 pg</td>
+            <td>Padang Rekreasi</td>
+            <td><input type="checkbox" name="status[]" id="" value="" /></td>
+            <td><a href="#">Hapus</a></td>
+            <td><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Latihan Rumah Sukan 3</td>
+            <td>18 Julai 2023</td>
+            <td>7.30 pg - 9.00 pg</td>
+            <td>Padang Perdana</td>
+            <td>
+              <input type="checkbox" name="status[]" id="" value="" checked />
+            </td>
+            <td><a href="#">Hapus</a></td>
+            <td><a href="#">Edit</a></td>
+          </tr>
+        </table>
+        <div class="butang">
+          <!-- <button type="reset" onclick="reset()">Reset</button> -->
+          <button type="submit" name="kemaskini">Kemaskini</button>
+        </div>
+      </form>
+      <div class="pautan">
+        Tambah aktiviti <a href="tambah_aktiviti.html">di sini</a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Hak Milik Terpelihara 2023&copy</p>
+      <p>Dibangunkan oleh Mohd Safwan</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // function reset() {
+      //   // var radios = document.getElementsByTagName("input");
+      //   // for (let radio of radios) {
+      //   //   radio.removeAttribute("checked");
+      //   // }
+      //   var radio = document.querySelector(
+      //     "input[type=checkbox][name=status]:checked"
+      //   );
+      //   radio.checked = false;
+      // }
+    </script>
+  </body>
+</html>
